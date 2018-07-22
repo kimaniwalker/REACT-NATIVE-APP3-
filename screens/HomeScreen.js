@@ -9,9 +9,7 @@ class HomeScreen extends Component {
     static navigationOptions = {
         title: 'Home Page'
     }
-navigate() {
-        console.log('worked');
-    }
+
 
     constructor(props) {
         super(props);
@@ -29,23 +27,25 @@ navigate() {
     
     render() {
        
-
+const { navigate } = this.props.navigation;
         return(  
 
             
 
             <ScrollView style={styles.container}>
             <Header 
-            leftComponent={{ icon: 'menu', color: '#fff'  }}
+            leftComponent={{
+   icon: 'menu',
+   color: '#fff',
+   onPress: () => navigate('AboutUs'),
+}}
             
             
-            centerComponent={{ text: 'THE 808 TRAP', style: { color: '#fff' } }}
+            centerComponent={{ text: 'APP TITLE', style: { color: '#fff' } }}
             rightComponent={{ icon: 'home', color: '#fff' }}
           />
 
-          <Button 
           
-          />
                 </ScrollView>
             
 
