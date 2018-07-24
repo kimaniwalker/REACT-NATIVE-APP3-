@@ -4,16 +4,16 @@ import { Header, Button } from 'react-native-elements';
 
 
 
+
 class HomeScreen extends Component {
 
-    static navigationOptions = {
+    static NavigationOptions = {
         title: 'Home Page'
     }
 
 
     constructor(props) {
         super(props);
-        
 
     }
 
@@ -26,8 +26,8 @@ class HomeScreen extends Component {
 
     
     render() {
-       
-const { navigate } = this.props.navigation;
+const { Navigate } = this.props.navigation;
+        
         return(  
 
             
@@ -37,7 +37,7 @@ const { navigate } = this.props.navigation;
             leftComponent={{
    icon: 'menu',
    color: '#fff',
-   onPress: () => navigate('AboutUs'),
+   onPress: () => this.props.navigation.navigate('AboutUs'),
 }}
             
             

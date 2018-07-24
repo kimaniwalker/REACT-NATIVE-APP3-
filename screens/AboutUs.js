@@ -14,7 +14,7 @@ export default class AboutUs extends Component {
         return(
             <ScrollView>
 
-            <text> About Us </text>
+            <Text> About Us </Text>
                 </ScrollView>
         )
     }
