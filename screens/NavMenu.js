@@ -1,14 +1,32 @@
 import React, { Component } from 'react';
-import { Header } from 'react-native-elements';
+import { ScrollView, Text } from 'react-native';
 
+export default class NavMenu extends Component {
 
+    static navigationOptions = {
+        title: 'Menu'
+    }
+    constructor(props) {
+        super(props);
+    }
 
-export default class ProjectCard extends Component {
     render() {
         return(
+            <ScrollView>
+
             
-        );
+            
+            
+            <Text h1> About Us </Text>
+            <Text h1> About Us </Text>
+            <Text h1> About Us </Text>
+            <Text h1> About Us </Text>
+            <Text h1> About Us </Text>
+            <Text h1> About Us </Text>
+
+
+
+                </ScrollView>
+        )
     }
 }
-
-

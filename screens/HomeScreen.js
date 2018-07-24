@@ -37,7 +37,7 @@ const { Navigate } = this.props.navigation;
             leftComponent={{
    icon: 'menu',
    color: '#fff',
-   onPress: () => this.props.navigation.navigate('AboutUs'),
+   onPress: () => this.props.navigation.navigate('NavMenu'),
 }}
             
             
